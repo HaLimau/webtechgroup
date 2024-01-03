@@ -60,7 +60,9 @@
                     echo '<td>' . $row["size"] . '</td>';
                     echo '<td>' . $row["type"] . '</td>';
                     echo '<td>' . $row["upload_date"] . '</td>';
-                    echo '<td>Edit</td>';
+                    echo '<td>Edit 
+                    
+                    Delete</td>';
                     echo '</tr>';
                 }
             }else{
@@ -71,7 +73,24 @@
 
         </table>
     </div>
-
+    <div class="floatFile">
+        <table border="1px solid" class="flTable">
+            <tr>
+                <td rowspan="4">File Icon Here</td>
+                <td>Textinput </td>
+            </tr>
+            <tr>
+                <td>size</td>
+            </tr>
+            <tr>
+                <td>filetype</td>
+            </tr>
+            <tr>
+                <td>date uploaded</td>
+            </tr>
+            
+        </table>
+    </div>
 
    <?php include 'footer.php';?>
 

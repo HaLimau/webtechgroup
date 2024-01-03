@@ -19,10 +19,21 @@
     <link rel="stylesheet" href="../style/style.css"> 
 </head>
 
-<body>
-    <header>
+<header>
         <h1>Cetak kertas bukan cetak rompak</h1>
     </header>
+<?php 
+        if (isset($_SESSION["UID"])){
+            include '../menus/menunav.php';
+            //add if admin, different menu againa
+        }
+        else {
+            include '../menus/loggedout_menu.php';
+            
+        }
+
+    ?>
+<body>
 
     <section>
         <h2>Login</h2>
@@ -31,7 +42,7 @@
                 echo "<p style='color: red;'>$error_message</p>";
             }
         ?>
-        <form method="post" id="login" action="auth/login_action.php">
+        <form method="post" id="login" action="login_action.php">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 

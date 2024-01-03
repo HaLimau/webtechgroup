@@ -32,18 +32,7 @@
 
     ?>
 <body>
-
-
-
-    <section>
-        <h2>Welcome to Our Printing Services!</h2>
-        <p>We're here to meet all your paper needs!</p>
-    </section>
-    <div class="cta">
-        <h2>Ready to Get Started?</h2>
-        <p>Click it! ↓</p>
-        <a href="#">Start Printing</a>
-    </div>
+        <!-- There dhould be something here :/ -->
 
 <?php include 'footer.php'?>
 </body>
