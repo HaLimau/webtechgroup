@@ -18,12 +18,12 @@
 			header("location:login.php");
 		} else {
 			echo 'Login error, user username and password is incorrect.<br>';
-			echo '<a href="login.php?login=1"> | Login |</a> &nbsp;&nbsp;&nbsp;
+			echo '<a href="auth/login.php?login=1"> | Login |</a> &nbsp;&nbsp;&nbsp;
 			<br>';
 			}
 	} else {
 		echo "Login error, user <b>$userName</b> does not exist. <br>";//user not exist
-		echo '<a href="login.php?login=1"> | Login |</a>&nbsp;&nbsp;&nbsp;
+		echo '<a href="auth/login.php?login=1"> | Login |</a>&nbsp;&nbsp;&nbsp;
 		<br>';
 		}
 	

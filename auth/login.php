@@ -31,7 +31,7 @@
                 echo "<p style='color: red;'>$error_message</p>";
             }
         ?>
-        <form method="post" id="login" action="login_action.php">
+        <form method="post" id="login" action="auth/login_action.php">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
