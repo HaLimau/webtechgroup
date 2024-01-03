@@ -29,6 +29,6 @@
             </div>
         </div>
         <div class="nav-right">
-            <a href="logout.php" class="logout">Logout</a>
+            <a href="auth/logout.php" class="logout">Logout</a>
         </div>
     </nav>
