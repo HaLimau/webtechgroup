@@ -1,5 +1,5 @@
 <nav>
         <div class="nav-left">
-            <a href="auth/login.php">Home - Login</a>
+            <a href="login.php">Home - Login</a>
         </div>
     </nav>

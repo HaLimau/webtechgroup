@@ -15,6 +15,7 @@
 
 <head>
     <?php include 'head.php';?>
+    <script src="scripts/scripts.js" defer></script>
     <title>Printing Service - File Inventory</title>
 </head>
 
@@ -60,9 +61,9 @@
                     echo '<td>' . $row["size"] . '</td>';
                     echo '<td>' . $row["type"] . '</td>';
                     echo '<td>' . $row["upload_date"] . '</td>';
-                    echo '<td>Edit 
-                    
-                    Delete</td>';
+                    echo '<td><a href="file_edit.php?id=' . $row["fileID"] . '">Edit </a>';
+                    echo '<a href="file_delete.php?id=' . $row["fileID"] . '">Delete</a>';
+                    echo '</td>';
                     echo '</tr>';
                 }
             }else{
@@ -73,24 +74,36 @@
 
         </table>
     </div>
-    <div class="floatFile">
-        <table border="1px solid" class="flTable">
-            <tr>
-                <td rowspan="4">File Icon Here</td>
-                <td>Textinput </td>
-            </tr>
-            <tr>
-                <td>size</td>
-            </tr>
-            <tr>
-                <td>filetype</td>
-            </tr>
-            <tr>
-                <td>date uploaded</td>
-            </tr>
-            
-        </table>
+             <!-- Upload button inside this page -->
+    <div class="addBtnDiv">
+       <img class="icon" onclick="addFileDiv()" src="images/add_button.svg">
+       <span class="addBtnTooltip">Add File</span>
     </div>
+
+    <div id="addFileDiv">
+            <span class="closeButton" onclick="closeAddFileDiv()">(X)</span><br>
+            <form method="POST" action="file_upload_action.php"  enctype="multipart/form-data"  id="myForm">
+                <table border="1" id="uploadTable">
+                    
+                <tr>
+                    <label for="images" class="drop-container" id="dropcontainer">
+                        <input type="file" id="file" required name="fileToUpload">
+                    </label>
+                </tr>
+                <tr>
+                    <td>
+                            <input type="submit" value="Upload" name="B1">                
+                            <input type="reset" value="Reset" name="B2">
+                    </td>
+                </tr>
+                
+
+                </table>
+            </form>
+    </div>
+
+
+
 
    <?php include 'footer.php';?>
 

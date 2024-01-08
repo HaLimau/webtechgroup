@@ -1,10 +1,10 @@
 <?php
     session_start();
-    include '../config.php';
+    include 'config.php';
 
     // Check if the user is already logged in
     if (isset($_SESSION["UID"])){
-        header("Location: ../index.php"); // Redirect to the homepage if already logged in
+        header("Location: index.php"); // Redirect to the homepage if already logged in
         exit();
     }
 ?>
@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Cetak Serumpun</title>
-    <link rel="stylesheet" href="../style/style.css"> 
+    <link rel="stylesheet" href="style/style.css"> 
 </head>
 
 <header>
@@ -24,11 +24,11 @@
     </header>
 <?php 
         if (isset($_SESSION["UID"])){
-            include '../menus/menunav.php';
+            include 'menus/menunav.php';
             //add if admin, different menu againa
         }
         else {
-            include '../menus/loggedout_menu.php';
+            include 'menus/loggedout_menu.php';
             
         }
 
@@ -58,7 +58,7 @@
             <a href ="register.php">Register </a>
     </div>
 
-    <?php include '../footer.php'?>
+    <?php include 'footer.php'?>
 </body>
 
 </html>

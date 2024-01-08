@@ -53,6 +53,7 @@
 					<td colspan="3" align="right"> 
 					<input type="submit" value="Upload" name="B1">                
 					<input type="reset" value="Reset" name="B2">
+					</td>
 				</tr>
 				
 			</table>

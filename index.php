@@ -14,11 +14,11 @@
 <head>
 
     <?php include 'head.php';?>
-    <title>Cetak Serumpun</title>
+    <title>Home Page</title>
 
 </head>
 <header>
-        <h1>Cetak kertas bukan cetak rompak</h1>
+        <h1>University Library System</h1>
     </header>
     <?php 
         if (isset($_SESSION["UID"])){
