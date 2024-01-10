@@ -32,7 +32,12 @@
 
     ?>
 <body>
-        <!-- There dhould be something here :/ -->
+        <div class="row">
+            <div class="row-left"></div>
+            <div class="row-right"></div>
+                
+
+        </div>
 
 <?php include 'footer.php'?>
 </body>

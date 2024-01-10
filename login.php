@@ -15,12 +15,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Cetak Serumpun</title>
+    <title>Login - University Library</title>
     <link rel="stylesheet" href="style/style.css"> 
 </head>
 
 <header>
-        <h1>Cetak kertas bukan cetak rompak</h1>
+<h1>User Registration</h1>
     </header>
 <?php 
         if (isset($_SESSION["UID"])){
@@ -53,7 +53,7 @@
         </form>
     </section>
 
-    <div>
+    <div align=center>
 
             <a href ="register.php">Register </a>
     </div>

@@ -29,8 +29,8 @@ include("config.php");
 			else { // User does not exist, insert new user record, hash the password
 				$pwdHash = trim(password_hash($_POST['password'], PASSWORD_DEFAULT));
 				//echo $pwdHash;
-				$sql = "INSERT INTO user (username, email, user_password ) VALUES
-				('$userName', '$userEmail', '$pwdHash')";
+				$sql = "INSERT INTO user (username, email, user_password, user_type ) VALUES
+				('$userName', '$userEmail', '$pwdHash', 3 )";
 				$insertOK=0;
 				if (mysqli_query($conn, $sql)) {
 				echo "<p>New user record created successfully.</p>"; $insertOK=1;
@@ -41,6 +41,6 @@ include("config.php");
 	}
 mysqli_close($conn);
 ?>
-<p><a href="register.php"> | Login |</a></p>
+<p><a href="index.php"> | Login |</a></p>
 </body>
 </html>

@@ -31,3 +31,33 @@ function closeAddFileDiv(){
     var x = document.getElementById("addFileDiv");
     x.style.display = 'none';
 }
+
+function showSection(sectionId) {
+    var sec1 = document.getElementById("borrowedhistorysection");
+    var sec2 = document.getElementById("reviewsSection");
+    var sec3 = document.getElementById("printOrderSection");
+
+    if(sectionId == "borrowedhistorysection"){
+        sec1.style.display = 'block';
+        sec2.style.display = 'none';
+        sec3.style.display = 'none';
+    }else if(sectionId == "reviewsSection"){
+        sec1.style.display = 'none';
+        sec2.style.display = 'block';
+        sec3.style.display = 'none';
+    }else if(sectionId == "printordersection"){
+        sec1.style.display = 'none'
+        sec2.style.display = 'none';
+        sec3.style.display = 'block';
+    } 
+}
+   
+function toggleDiv(id){
+    var div = document.getElementById("borrowDiv");
+    if (id.style.display == 'none'){
+        id.style.display = 'block';
+    }else{
+        id.style.display = 'none';
+    }
+   
+}
